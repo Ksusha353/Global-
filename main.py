@@ -39,19 +39,16 @@ def bot_help(message):
     bot.send_message(message.chat.id, "/start — приветствие от бота\n/help — помощь\n/globalhelper — случайное решение проблемы глобального потепления\n/fact — случайный факт о глобальном потеплении\n/progressfact — случайное достижение в решении этой проблемы\n/test - мини тест-игра")
 
 @bot.message_handler(commands=["globalhelper"])
-def bot_start(message):
+def bot_globalhelper(message):
     bot.send_message(message.chat.id, globalhelper())
 
 @bot.message_handler(commands=["fact"])
-def bot_start(message):
+def bot_fact(message):
     bot.send_message(message.chat.id, fact())
 
 @bot.message_handler(commands=["progressfact"])
-def bot_start(message):
+def bot_progressfact(message):
     bot.send_message(message.chat.id, progressfact())
-
-
-
 
 @bot.message_handler(commands=["test"])
 def start_test(message):
