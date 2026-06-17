@@ -26,7 +26,7 @@ Set-ExecutionPolicy RemoteSigned -Scope Process
 
 ### 2) Подключение необходимых зависимостей
 ```
-pip install -r requirements.txt
+pip install -r requiremets.txt
 ```
 ### 3) Установка токена
 
