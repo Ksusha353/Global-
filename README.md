@@ -10,9 +10,31 @@
 
 /progressfact - случайное достижение в решении этой проблемы
 
-/rules - правила 
+/test - мини тест-игра
 
+## Запуск проекта
+### 1) Установка виртуального окружения
+```
+py -m venv venv
+```
+```
+Set-ExecutionPolicy RemoteSigned -Scope Process
+```
+```
+.\venv\Scripts\Activate.ps1
+```
 
+### 2) Подключение необходимых зависимостей
+```
+pip install -r requirements.txt
+```
+### 3) Установка токена
 
+В config.py необходимо вставить токен из @BotFather
+
+### 4) Запуск проекта
+```
+py main.py
+```
 
 
