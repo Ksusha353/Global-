@@ -1,6 +1,6 @@
 import telebot
 from config import token
-from logic import globalhelper, fact, progressfact
+from logic import globalhelper, fact, progressfact, exersize
 from telebot import types
 bot = telebot.TeleBot(token)
 
@@ -49,6 +49,10 @@ def bot_fact(message):
 @bot.message_handler(commands=["progressfact"])
 def bot_progressfact(message):
     bot.send_message(message.chat.id, progressfact())
+
+@bot.message_handler(commands=["exersize"])
+def bot_start(message):
+    bot.send_message(message.chat.id, exersize())
 
 @bot.message_handler(commands=["test"])
 def start_test(message):
